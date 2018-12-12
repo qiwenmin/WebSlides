@@ -705,6 +705,110 @@ sudo wspr --repeat --offset BG1REN ON80 10 40m 20m 15m 10m</pre>
           </div>
         </section>
 
+        <section class="bg-black aligncenter">
+          <span class="background dark" style="background-image:url('imgs/receiver-02.jpg')"></span>
+          <div class="wrap">
+            <div class="slide-top">
+              <h1>各种电视棒</h1>
+            </div>
+            <img class="slide-bottom card" src="imgs/rtl-sdr-dongles.jpg" alt="rtl-sdr dongles" style="max-width:80vw;max-height:70vh"/>
+          </div>
+        </section>
+
+        <section class="bg-black aligncenter">
+          <span class="background dark" style="background-image:url('imgs/receiver-02.jpg')"></span>
+          <div class="wrap">
+            <h1>试试简单的转发器</h1>
+            <br/>
+            <h2>上行：<big><strong>438.700</strong></big> MHz</h2>
+            <h2>下行：<big><strong>145.100</strong></big> MHz</h2>
+            <br/>
+            <pre style="font-size:125%">rtl_sdr -s 250000 -g 35 -f 437.5M -p 59 - | buffer | \
+sudo ./sendiq -s 250000 -f 145.1e6 -t u8 -i -</pre>
+          </div>
+        </section>
+
+        <section class="bg-black aligncenter">
+          <span class="background dark" style="background-image:url('imgs/receiver-02.jpg')"></span>
+          <div class="wrap">
+            <h1>APRS Rx iGate</h1>
+            <h2>树莓派 + 电视棒 = APRS iGate网关</h2>
+            <h3>接收电台的APRS信号、解码后转发到aprs.fi</h3>
+            <h3><a href="http://qso365.co.uk/2018/04/updated-guide-to-setting-up-an-aprs-rx-only-igate-using-a-raspberry-pi-rtl-sdr-dongle-and-a-pre-built-image/">G6NHU于2018年4月13日发了一篇文档</a></h3>
+          </div>
+        </section>
+
+        <section class="bg-black aligncenter">
+          <span class="background dark" style="background-image:url('imgs/receiver-02.jpg')"></span>
+          <div class="wrap">
+            <div class="slide-top">
+              <h1>APRS - Beijing</h1>
+            </div>
+            <img class="slide-bottom card" src="imgs/aprs-beijing.png" alt="aprs beijing" style="max-width:80vw;max-height:70vh"/>
+          </div>
+        </section>
+
+        <section class="bg-black aligncenter">
+          <span class="background dark" style="background-image:url('imgs/receiver-02.jpg')"></span>
+          <div class="wrap">
+            <div class="slide-top">
+              <h1>收SSTV图片</h1>
+            </div>
+            <img class="slide-bottom card" src="imgs/pi_qsstv_rx_2.jpg" alt="pi qsstv" style="max-width:80vw;max-height:70vh"/>
+          </div>
+        </section>
+
+        <section class="bg-black aligncenter">
+          <span class="background dark" style="background-image:url('imgs/receiver-02.jpg')"></span>
+          <div class="wrap">
+            <h1>接收NOAA气象卫星的云图</h1>
+            <div class="alignleft" style="text-align:left">
+              <h3>预测卫星轨迹</h3>
+              <h3>接收卫星信号</h3>
+              <h3>解码出云图</h3>
+              <h3>上传到Twitter</h3>
+              <h3>这一切都是自动化的</h3>
+              <h3><a href="https://www.instructables.com/id/Raspberry-Pi-NOAA-Weather-Satellite-Receiver/">Haslettj发布了一个教程</a></h3>
+            </div>
+            <img class="alignright card" src="imgs/rpi-noaa-received.jpg" alt="rpi noaa received" style="max-width:40vw"/>
+          </div>
+        </section>
+
+        <section class="bg-black aligncenter">
+          <span class="background dark" style="background-image:url('imgs/receiver-02.jpg')"></span>
+          <div class="wrap">
+            <div class="slide-top">
+              <h1>接收NOAA气象卫星的云图</h1>
+            </div>
+            <img class="slide-bottom card" src="imgs/rpi-noaa-27-made.png" alt="rpi noaa 27 made" style="max-width:80vw;max-height:70vh"/>
+          </div>
+        </section>
+
+        <section class="bg-black aligncenter">
+          <span class="background dark" style="background-image:url('imgs/receiver-02.jpg')"></span>
+          <div class="wrap">
+            <div class="slide-top">
+              <h1>录制和重放信号</h1>
+              <h4>RPiTx的例子：录制一段无线遥控开关的信号，并再次发射出去。</h4>
+            </div>
+            <img class="slide-bottom card" src="imgs/rpitx-replay.png" alt="rpitx replay" style="max-width:80vw;max-height:60vh"/>
+          </div>
+        </section>
+
+        <section class="bg-black aligncenter">
+          <span class="background dark" style="background-image:url('imgs/receiver-02.jpg')"></span>
+          <div class="wrap">
+            <h1>显示频谱</h1>
+            <div class="alignleft" style="text-align:left">
+              <h3>接X5105的IF输出</h3>
+              <h3>大屏显示频谱！</h3>
+              <h3>接CIV控制电台</h3>
+              <h3>……</h3>
+            </div>
+            <img class="alignright card" src="imgs/rpi-spectrum.jpg" alt="rpi spectrum" style="max-width:50vw"/>
+          </div>
+        </section>
+
       </article>
     </main>
     <!--main-->

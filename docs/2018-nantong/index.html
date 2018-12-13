@@ -1,0 +1,1176 @@
+<!doctype html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CLEAN MARKUP = GOOD KARMA.
+      Hi source code lover,
+
+      you're a curious person and a fast learner ;)
+      Let's make something beautiful together. Contribute on Github:
+      https://github.com/webslides/webslides
+
+      Thanks!
+      -->
+
+    <!-- SEO -->
+    <title>火腿手中的树莓派</title>
+    <meta name="description" content="生命不息、折腾不止……">
+
+    <!-- URL CANONICAL -->
+    <!-- <link rel="canonical" href="http://your-url.com/permalink"> -->
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
+
+    <!-- CSS Base -->
+    <link rel="stylesheet" type='text/css' media='all' href="../static/css/webslides.css">
+
+    <!-- Optional - CSS SVG Icons (Font Awesome) -->
+    <link rel="stylesheet" type="text/css" media="all" href="../static/css/svg-icons.css">
+
+    <!-- SOCIAL CARDS (ADD YOUR INFO) -->
+
+    <!-- FACEBOOK -->
+    <meta property="og:url" content="http://bg1ren-slides.netlify.com"> <!-- EDIT -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="火腿手中的树莓派"> <!-- EDIT -->
+    <meta property="og:description" content="生命不息、折腾不止……"> <!-- EDIT -->
+    <meta property="og:updated_time" content="2018-12-09T16:44:00"> <!-- EDIT -->
+    <meta property="og:image" content="../static/images/share-webslides.jpg" > <!-- EDIT -->
+
+    <!-- TWITTER -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@qiwenmin"> <!-- EDIT -->
+    <meta name="twitter:creator" content="@qiwenmin"> <!-- EDIT -->
+    <meta name="twitter:title" content="火腿手中的树莓派"> <!-- EDIT -->
+    <meta name="twitter:description" content="生命不息、折腾不止……"> <!-- EDIT -->
+    <meta name="twitter:image" content="../static/images/share-webslides.jpg"> <!-- EDIT -->
+
+    <!-- FAVICONS -->
+    <link rel="shortcut icon" sizes="16x16" href="../static/images/favicons/favicon.png">
+    <link rel="shortcut icon" sizes="32x32" href="../static/images/favicons/favicon-32.png">
+    <link rel="apple-touch-icon icon" sizes="76x76" href="../static/images/favicons/favicon-76.png">
+    <link rel="apple-touch-icon icon" sizes="120x120" href="../static/images/favicons/favicon-120.png">
+    <link rel="apple-touch-icon icon" sizes="152x152" href="../static/images/favicons/favicon-152.png">
+    <link rel="apple-touch-icon icon" sizes="180x180" href="../static/images/favicons/favicon-180.png">
+    <link rel="apple-touch-icon icon" sizes="192x192" href="../static/images/favicons/favicon-192.png">
+
+    <!-- Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#333333">
+
+    <style type="text/css">
+      .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+      .gallery.dark-caption li figcaption {
+        background-color: #ddd;
+      }
+      .gallery.dark-caption li figcaption:before {
+        border-color: transparent transparent #ddd #ddd;
+      }
+
+      div.paras p {
+        font-size: 110%;
+        line-height: 2.5rem;
+        margin-bottom: 1.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header role="banner">
+      <nav role="navigation">
+        <p class="logo"><a href="./index.html" title="火腿手中的树莓派">火腿手中的树莓派</a></p>
+        <ul>
+          <!--
+          <li class="github">
+            <a rel="external" href="https://github.com/webslides/webslides" title="Github">
+              <svg class="fa-github">
+                <use xlink:href="#fa-github"></use>
+              </svg>
+              <em>WebSlides</em>
+            </a>
+          </li>
+          -->
+          <li class="twitter">
+            <a rel="external" href="https://twitter.com/qiwenmin" title="Twitter">
+              <svg class="fa-twitter">
+                <use xlink:href="#fa-twitter"></use>
+              </svg>
+              <em>@qiwenmin</em>
+            </a>
+          </li>
+          <!--  <li class="dribbble"><a rel="external" href="http://dribbble.com/webslides" title="Dribbble"><svg class="fa-dribbble"><use xlink:href="#fa-dribbble"></use></svg> <em>webslides</em></a></li> -->
+        </ul>
+      </nav>
+    </header>
+    <main role="main">
+      <article id="webslides">
+
+        <!-- Quick Guide
+          - Each parent <section> in the <article id="webslides"> element is an individual slide.
+          - Vertical sliding = <article id="webslides" class="vertical">
+          - <div class="wrap"> = container 90% / <div class="wrap size-50"> = 45%;
+        -->
+
+        <section class="bg-purple aligncenter">
+          <span class="background dark" style="background-image:url('imgs/rpi-01.jpg')"></span>
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap">
+            <h1>火腿手中的树莓派</h1>
+            <h2>BG1REN</p>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <section class="bg-green aligncenter">
+          <span class="background dark" style="background-image:url('imgs/rpi-03.jpg')"></span>
+          <div class="wrap">
+            <h1>简单说说树莓派……</h1>
+            <p class="text-intro">A small and affordable computer that you can use to learn programming</p>
+          </div>
+        </section>
+
+        <section>
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap">
+            <div class="cta-cover">
+              <h1><strong>树莓派</strong> Raspberry Pi</h1>
+              <p class="alignright">
+                <a href="https://projects.raspberrypi.org/en/projects/raspberry-pi-getting-started" title="Getting Started">
+                  <img class="card" src="imgs/rpi-connecting.gif" style="width:344px"/>
+                </a>
+              </p>
+            </div>
+            <ul class="flexblock features">
+              <li>
+                <div>
+                  <h1>小身材</h1>
+                  <p>名片大小，轻松进口袋<br/>
+                  85.60mm x 53.98mm x 17mm</p>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h1>价格便宜</h1>
+                  <p>某宝价裸板200冒头<br/>
+                  加外壳、存储卡也不到300元</p>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h1>量又足</h1>
+                  <p>功能强大接口全<br/>
+                  64位4核1.4G CPU、1G RAM、LAN、WiFi、蓝牙、USB、HDMI、GPIO……</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <section>
+          <div class="wrap">
+            <div class="card-40 bg-white card">
+              <figure>
+                <img src="imgs/770A5842-1612x1080.jpg" alt="Raspberry Pi 3 Model B+">
+              </figure>
+              <!-- end figure-->
+              <div class="flex-content">
+                <h2>
+                  Raspberry Pi 3 Model B+
+                </h2>
+                <p>Raspberry Pi 3的最新型号</p>
+                <ul class="description">
+                  <li><strong class="text-label">处理器：</strong> ARMv8 4核 1.4GHz</li>
+                  <li><strong class="text-label">内存：</strong> 1GB LPDDR2 SDRAM</li>
+                  <li><strong class="text-label">无线：</strong> 2.4GHz/5GHz Wireless LAN，蓝牙4.2/BLE</li>
+                </ul>
+                <p>
+                  40脚GPIO、千兆网、HDMI、4个USB 2.0、CSI摄像头接口、DSI触屏接口、4线立体声和和视频口、MicroSD插座、5V/2.5A直流输入。通过PoE Hat可支持PoE。
+                </p>
+              </div>
+              <!-- end .flex-content-->
+            </div>
+            <!-- .end .card50 -->
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <section>
+          <div class="wrap">
+            <div class="card-40 bg-white card">
+              <figure>
+                <img src="imgs/3A-1-1633x1080.jpg" alt="Raspberry Pi 3 Model A+">
+              </figure>
+              <!-- end figure-->
+              <div class="flex-content">
+                <h2>
+                  Raspberry Pi 3 Model A+
+                </h2>
+                <p>B+的缩小版本</p>
+                <ul class="description">
+                  <li><strong class="text-label">处理器：</strong> ARMv8 4核 1.4GHz</li>
+                  <li><strong class="text-label">内存：</strong> 512MB LPDDR2 SDRAM</li>
+                  <li><strong class="text-label">无线：</strong> 2.4GHz/5GHz Wireless LAN，蓝牙4.2/BLE</li>
+                </ul>
+                <p>
+                  40脚GPIO、HDMI、1个USB 2.0、CSI摄像头接口、DSI触屏接口、4线立体声和和视频口、MicroSD插座、5V/2.5A直流输入。
+                </p>
+              </div>
+              <!-- end .flex-content-->
+            </div>
+            <!-- .end .card50 -->
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <section>
+          <div class="wrap">
+            <div class="card-40 bg-white card">
+              <figure>
+                <img src="imgs/Raspberry-Pi-Zero-1-1755x1080.jpg" alt="Raspberry Pi Zero">
+              </figure>
+              <!-- end figure-->
+              <div class="flex-content">
+                <h2>
+                  Raspberry Pi Zero
+                </h2>
+                <p>最小的树莓派，像个大U盘。</p>
+                <ul class="description">
+                  <li><strong class="text-label">处理器：</strong> 单核 1GHz</li>
+                  <li><strong class="text-label">内存：</strong> 512MB RAM</li>
+                </ul>
+                <p>
+                  Mini HDMI口、MicroUSB OTG口、MicroUSB供电、40脚GPIO、视频口、CSI摄像头接口。
+                </p>
+              </div>
+              <!-- end .flex-content-->
+            </div>
+            <!-- .end .card50 -->
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <section>
+          <div class="wrap">
+            <div class="card-40 bg-white card">
+              <figure>
+                <img src="imgs/Pi-Zero-W-Tilt-1-1620x1080.jpg" alt="Raspberry Pi Zero W">
+              </figure>
+              <!-- end figure-->
+              <div class="flex-content">
+                <h2>
+                  Raspberry Pi Zero W
+                </h2>
+                <p>Raspberry Pi Zero的增强型。</p>
+                <ul class="description">
+                  <li><strong class="text-label">无线网：</strong> 802.11 b/g/n wireless LAN</li>
+                  <li><strong class="text-label">蓝牙：</strong> 蓝牙4.1、BLE</li>
+                </ul>
+                <p>
+                  其他和Raspberry Pi Zero一样。
+                </p>
+              </div>
+              <!-- end .flex-content-->
+            </div>
+            <!-- .end .card50 -->
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <section class="fullscreen bg-white">
+          <div class="card-60">
+            <figure>
+              <img src="imgs/Raspbian-Desktop_Version_2015-09-25.png" alt="Raspbian">
+            </figure>
+            <!-- end figure-->
+            <div class="flex-content">
+              <h2><strong>Linux with GUI</strong></h2>
+              <p class="text-intro">大多数情况下，树莓派运行Linux操作系统。</p>
+              <p><strong>Raspbian是官方支持的Linux发行版，兼容性最好。可以用NOOBS安装。</strong></p>
+              <p><strong>常用软件都可从软件仓库中直接下载安装。</strong></p>
+              <p>此外，还有大量的第三方发行版，例如Ubuntu Mate、Snappy Ubuntu Core、ArchLinux等。甚至还能运行Windows 10 IoT Core。</p>
+            </div>
+            <!-- end .flex-content-->
+          </div>
+        </section>
+
+        <section>
+          <div class="card-50">
+            <figure>
+              <img class="aligncenter card" src="imgs/rpi-as-computer.jpg" alt="RPi as Computer" style="max-width: 500px"/>
+            </figure>
+            <div class="flex-content">
+              <h2>当常规电脑用</h2>
+              <hr/>
+              <h4>插入存有操作系统的MicroSD卡</h4>
+              <h4>连接HDMI显示器</h4>
+              <h4>接入USB键盘和鼠标</h4>
+              <h4>通过MicroUSB供电</h4>
+              <hr/>
+              <p class="slide-bottom">接VGA显示器需要用转接线<br/>
+              可以接蓝牙键盘和鼠标</p>
+            </div>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <section>
+          <div class="wrap">
+            <h3>远程操作树莓派</h3>
+            <ul class="flexblock gallery">
+              <li>
+                <a href="#">
+                  <figure>
+                    <img alt="Thumbnail" src="imgs/ssh.jpg"/>
+                    <figcaption>
+                      <h2>SSH</h2>
+                      <p>适合熟悉命令行操作的牛人。高效、专业。</p>
+                    </figcaption>
+                  </figure>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <figure>
+                    <img alt="Thumbnail" src="imgs/vnc-pc.jpg"/>
+                    <figcaption>
+                      <h2>VNC（桌面电脑）</h2>
+                      <p>图形界面、简单易用。</p>
+                    </figcaption>
+                  </figure>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <figure>
+                    <img alt="Thumbnail" src="imgs/vnc-mobile.jpg"/>
+                    <figcaption>
+                      <h2>VNC（手机或平板电脑）</h2>
+                      <p>易用又便携。轻松带出去玩。</p>
+                    </figcaption>
+                  </figure>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="bg-blue aligncenter">
+          <span class="background dark" style="background-image:url('imgs/rpi-02.jpg')"></span>
+          <div class="wrap">
+            <h1>火腿的第一个树莓派实验</h1>
+            <h2>FM发射机</h2>
+          </div>
+        </section>
+
+        <section>
+          <div class="wrap">
+            <h3>只要这几样就能搞定</h3>
+            <ul class="flexblock gallery">
+              <li>
+                <a href="#">
+                  <figure>
+                    <img alt="Thumbnail" src="imgs/rpi-b.jpg"/>
+                    <figcaption>
+                      <h2>一个树莓派</h2>
+                      <p>Pizero、PizeroW、PiA+、PiB、PiB+、Pi2B、Pi3B或Pi3B+都可以。</p>
+                    </figcaption>
+                  </figure>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <figure>
+                    <img alt="Thumbnail" src="imgs/dupont.jpg"/>
+                    <figcaption>
+                      <h2>一根杜邦线</h2>
+                      <p>母头。十几厘米即可。当天线用。<br/>
+                      接树莓派的GPIO-04。</p>
+                    </figcaption>
+                  </figure>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <figure>
+                    <img alt="Thumbnail" src="imgs/handset-radio.jpg"/>
+                    <figcaption>
+                      <h2>一个手台</h2>
+                      <p>收树莓派发射的信号。<br/>
+                      调对频率，关掉接收亚音。</p>
+                    </figcaption>
+                  </figure>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="bg-trans-dark aligncenter">
+          <span class="background" style="background-image:url('imgs/radio-gray-bg.jpg')"></span>
+          <div class="wrap">
+            <h1>现在就试试！</h1>
+            <br/>
+            <h1>请将手台调整到 <big><strong>438.700</strong></big> MHz</h1>
+            <br/>
+            <h1>准备收听……</h1>
+          </div>
+        </section>
+
+        <section class="fullscreen bg-black">
+          <div class="card-50">
+            <figure>
+              <img src="imgs/apollo_13_houston_we_have_a_problem.jpg" alt="We have a problem">
+            </figure>
+            <!-- end figure-->
+            <div class="flex-content">
+              <h4><strong>“Houston, we have a problem.”</strong></h4>
+              <h5 style="text-align: right">APOLLO 13</h5>
+            </div>
+            <!-- end .flex-content-->
+          </div>
+        </section>
+
+        <section class="aligncenter bg-trans-dark">
+          <span class="background dark" style="background-image:url('imgs/dark-meter.jpg')"></span>
+          <div class="wrap">
+            <h1>RPiTx项目</h1>
+            <div class="grid">
+              <div class="column" style="text-align:left">
+                <ul>
+                  <h4>RPiTx将树莓派变成一个通用的射频发射器。</h4>
+                  <h4>开源，目前是第2版，Star数1121，项目处于活跃状态。</h4>
+                  <h4>主要用于射频系统的教学。</h4>
+                  <h4><a href="https://github.com/F5OEO/rpitx" target="_blank">https://github.com/F5OEO/rpitx</a></h4>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="aligncenter bg-trans-dark">
+          <span class="background dark" style="background-image:url('imgs/dark-meter.jpg')"></span>
+          <div class="wrap">
+            <h1>RPiTx项目（续）</h1>
+            <div class="grid">
+              <div class="column" style="text-align:left">
+                <ul>
+                  <h4>使用树莓派内置的PLL（锁相环）模块。</h4>
+                  <h4>在GPIO-04生成射频信号。</h4>
+                  <h4>支持的频率范围：5KHz至1500MHz。</h4>
+                  <h4>为了避免造成干扰，需加滤波器。此外无需其他硬件。</h4>
+                  <h4><a href="https://github.com/F5OEO/rpitx" target="_blank">https://github.com/F5OEO/rpitx</a></h4>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="aligncenter bg-trans-dark">
+          <span class="background dark" style="background-image:url('imgs/dark-meter.jpg')"></span>
+          <div class="wrap">
+            <h1>RPiTx - Tune</h1>
+            <img class="card" src="imgs/tunerpitx.png" alt="rpitx tune" style="max-width:80vw;max-height:60vh"/>
+          </div>
+        </section>
+
+        <section class="aligncenter bg-trans-dark">
+          <span class="background dark" style="background-image:url('imgs/dark-meter.jpg')"></span>
+          <div class="wrap">
+            <h1>RPiTx - Chirp</h1>
+            <img class="card" src="imgs/chirprpitx.png" alt="rpitx chirp" style="max-width:80vw;max-height:60vh"/>
+          </div>
+        </section>
+
+        <section class="aligncenter bg-trans-dark">
+          <span class="background dark" style="background-image:url('imgs/dark-meter.jpg')"></span>
+          <div class="wrap">
+            <h1>RPiTx - Spectrum</h1>
+            <img class="card" src="imgs/spectrumrpitx.png" alt="rpitx spectrum" style="max-width:80vw;max-height:60vh"/>
+          </div>
+        </section>
+
+        <section class="aligncenter bg-trans-dark">
+          <span class="background dark" style="background-image:url('imgs/dark-meter.jpg')"></span>
+          <div class="wrap">
+            <h1>RPiTx - FM with RDS</h1>
+            <img class="card" src="imgs/fmrds.png" alt="rpitx fmrds" style="max-width:80vw;max-height:60vh"/>
+          </div>
+        </section>
+
+        <section class="aligncenter bg-trans-dark">
+          <span class="background dark" style="background-image:url('imgs/dark-meter.jpg')"></span>
+          <div class="wrap">
+            <h1>RPiTx - SSB</h1>
+            <img class="card" src="imgs/ssbrpitx.png" alt="rpitx ssb" style="max-width:80vw;max-height:60vh"/>
+          </div>
+        </section>
+
+        <section class="aligncenter bg-trans-dark">
+          <span class="background dark" style="background-image:url('imgs/dark-meter.jpg')"></span>
+          <div class="wrap">
+            <h1>RPiTx - SSTV</h1>
+            <img class="card" src="imgs/sstvrpitx.jpg" alt="rpitx tune" style="max-width:80vw;max-height:60vh"/>
+          </div>
+        </section>
+
+        <section class="aligncenter bg-trans-dark">
+          <span class="background dark" style="background-image:url('imgs/dark-meter.jpg')"></span>
+          <div class="wrap">
+            <h1>RPiTx - POCSAG (pager mode)</h1>
+            <img class="card" src="imgs/pocsagrpitx.jpg" alt="rpitx pocsag" style="max-width:80vw;max-height:60vh"/>
+          </div>
+        </section>
+
+        <section class="aligncenter bg-trans-dark">
+          <span class="background dark" style="background-image:url('imgs/dark-meter.jpg')"></span>
+          <div class="wrap">
+            <h1>RPiTx - Freedv (digital voice)</h1>
+            <img class="card" src="imgs/freedvrpitx.jpg" alt="rpitx freedv" style="max-width:80vw;max-height:60vh"/>
+          </div>
+        </section>
+
+        <section class="aligncenter bg-trans-dark">
+          <span class="background dark" style="background-image:url('imgs/dark-meter.jpg')"></span>
+            <div class="wrap">
+            <h1>RPiTx - Opera (Beacon)</h1>
+            <img class="card" src="imgs/operarpitx.jpg" alt="rpitx opera" style="max-width:80vw;max-height:60vh"/>
+          </div>
+        </section>
+
+        <section class="aligncenter bg-trans-dark">
+          <span class="background dark" style="background-image:url('imgs/dark-meter.jpg')"></span>
+          <div class="wrap">
+            <h1>我们加点难度，继续折腾……</h1>
+          </div>
+        </section>
+
+        <section class="bg-blue aligncenter">
+          <span class="background dark" style="background-image:url('imgs/world-01.jpg')"></span>
+          <div class="wrap">
+            <h1>10mW功率 超越9000公里</h1>
+            <h2>树莓派变身WSPR信标台</h2>
+          </div>
+        </section>
+
+        <section class="aligncenter bg-trans-dark">
+          <span class="background dark" style="background-image:url('imgs/led-bg.jpg')"></span>
+          <div class="wrap">
+            <h1>WSPR - Weak Signal Propagation Reporter</h1>
+            <hr/>
+            <h3>发音：whisper</h3>
+            <h3>用于火腿之间的弱信号通讯的协议和程序</h3>
+            <h3>查看Spots：<a href="http://wsprnet.org/">http://wsprnet.org/</a></h3>
+            <h3>最初由K1JT设计编程</h3>
+          </div>
+        </section>
+
+        <section class="aligncenter bg-trans-dark">
+          <span class="background dark" style="background-image:url('imgs/led-bg.jpg')"></span>
+          <div class="wrap">
+            <img class="alignleft card" src="imgs/2008JosephTaylor.jpg" alt="Joe Taylor" style="max-width:25vw"/>
+            <div class="alignright">
+              <h1>大牛K1JT - Joe Taylor</h1>
+              <hr/>
+              <h3>诺贝尔奖得主</h3>
+              <h3>FT8、JT系列、MSK144、WSPR……</h3>
+              <h3>WSJT-X</h3>
+            </div>
+          </div>
+        </section>
+
+        <section class="aligncenter bg-trans-dark">
+          <span class="background dark" style="background-image:url('imgs/led-bg.jpg')"></span>
+          <div class="wrap">
+            <div class="slide-top">
+              <h3>WSPR地图</h3>
+            </div>
+            <img class="slide-bottom card" src="imgs/wspr-map.jpg" alt="wsprmap" style="max-height:80vh;width:80vw"/>
+          </div>
+        </section>
+
+        <section class="aligncenter bg-trans-dark">
+          <span class="background dark" style="background-image:url('imgs/led-bg.jpg')"></span>
+          <div class="wrap">
+            <div class="slide-top">
+              <h3>WSPR数据库</h3>
+            </div>
+            <img class="slide-bottom card" src="imgs/wspr-spots.png" alt="wsprspots" style="height:80vh;max-width:80vw"/>
+          </div>
+        </section>
+
+        <section class="aligncenter bg-trans-dark">
+          <span class="background dark" style="background-image:url('imgs/led-bg.jpg')"></span>
+          <div class="wrap">
+            <div class="slide-top">
+              <h3>KF6HI - http://kf6hi.net/radio/SNR.html</h3>
+            </div>
+            <img class="slide-bottom card" src="imgs/SNR_2500.jpg" alt="SNR 2500" style="width:80vw"/>
+          </div>
+        </section>
+
+        <section class="aligncenter bg-trans-dark">
+          <span class="background dark" style="background-image:url('imgs/led-bg.jpg')"></span>
+          <div class="wrap">
+            <div class="alignleft">
+              <div>
+                <h1>接上真正的天线</h1>
+                <h1>运行WSPR软件</h1>
+                <h1>树莓派变身WSPR信标台</h1>
+              </div>
+              <div style="position:fixed;bottom:40px;left:40px;color:#ddd;font-size:120%">注：为了避免产生干扰，需加装滤波器。</div>
+            </div>
+            <img class="alignright card" src="imgs/wspr-rpi.jpg" alt="WSPR RPi" style="max-width:30vw"/>
+          </div>
+        </section>
+
+        <section class="aligncenter bg-trans-dark">
+          <span class="background dark" style="background-image:url('imgs/led-bg.jpg')"></span>
+          <div class="wrap">
+            <div class="slide-top">
+              <h1>WsprryPi - 树莓派上的WSPR程序</h1>
+              <h3><a href="https://github.com/JamesP6000/WsprryPi">https://github.com/JamesP6000/WsprryPi</a></h3>
+              <pre style="font-size:125%"># 下载源码
+git clone https://github.com/JamesP6000/WsprryPi.git
+
+# 编译
+cd WsprryPi
+make
+
+# 安装
+sudo make install
+
+# 启动执行
+sudo wspr --repeat --offset BG1REN ON80 10 40m 20m 15m 10m</pre>
+            </div>
+          </div>
+        </section>
+
+        <section class="aligncenter bg-trans-dark">
+          <span class="background dark" style="background-image:url('imgs/led-bg.jpg')"></span>
+          <div class="wrap">
+            <div class="slide-top">
+              <h3>80米波段频率有变</h3>
+            </div>
+            <img class="slide-bottom card" src="imgs/fix-wsprrypi.png" alt="fix wsprrypi" style="max-width:80vw;max-height:70vh"/>
+          </div>
+        </section>
+
+        <section class="aligncenter bg-trans-dark">
+          <span class="background dark" style="background-image:url('imgs/led-bg.jpg')"></span>
+          <div class="wrap">
+            <div class="slide-top">
+              <h3>BG1REN - WSPR</h3>
+            </div>
+            <img class="slide-bottom card" src="imgs/wspr-bg1ren-20181212.png" alt="BG1REN WSPR Spots" style="max-width:80vw;max-height:70vh"/>
+          </div>
+        </section>
+
+        <section class="aligncenter bg-trans-dark">
+          <span class="background dark" style="background-image:url('imgs/led-bg.jpg')"></span>
+          <div class="wrap">
+            <div class="slide-top">
+              <h3>BG1REN - WSPR</h3>
+            </div>
+            <img class="slide-bottom card" src="imgs/wspr-bg1ren-9000km.png" alt="BG1REN WSPR 9000km" style="max-width:80vw;max-height:70vh"/>
+          </div>
+        </section>
+
+        <section class="aligncenter bg-trans-dark">
+          <span class="background dark" style="background-image:url('imgs/led-bg.jpg')"></span>
+          <div class="wrap">
+            <div class="slide-top">
+              <h3>树莓派的发射功率 - 10mW</h3>
+            </div>
+            <img class="slide-bottom card" src="imgs/rpi-wspr-pwr.png" alt="RPi WSPR Power" style="max-width:80vw;max-height:70vh"/>
+          </div>
+        </section>
+        
+        <section class="bg-trans-dark aligncenter">
+          <span class="background" style="background-image:url('imgs/led-bg.jpg')"></span>
+          <div class="wrap">
+            <div class="content-left" style="background-color:rgba(0,0,0,0.6);padding:40px;border-radius:16px">
+              <h3><big>10</big> mW功率有多小？</h3>
+              <h4>LED：20～40 mW</h4>
+              <p>LED正向压降约2V，电流10～20mA。</p>
+              <h4>识别10,000公里处的一颗LED</h4>
+            </div>
+          </div>
+        </section>
+
+        <section class="aligncenter bg-trans-dark">
+          <span class="background dark" style="background-image:url('imgs/led-bg.jpg')"></span>
+          <div class="wrap">
+            <h1>给树莓派接上天线后……<br/>我们再来加点什么？</h1>
+          </div>
+        </section>
+
+        <section class="bg-black aligncenter">
+          <span class="background dark" style="background-image:url('imgs/receiver-01.jpg')"></span>
+          <div class="wrap">
+            <h1>插个便宜的电视棒</h1>
+            <h2>树莓派变接收机</h2>
+          </div>
+        </section>
+
+        <section class="bg-black aligncenter">
+          <span class="background dark" style="background-image:url('imgs/receiver-02.jpg')"></span>
+          <div class="wrap">
+            <div class="slide-top">
+              <h1>各种电视棒</h1>
+            </div>
+            <img class="slide-bottom card" src="imgs/rtl-sdr-dongles.jpg" alt="rtl-sdr dongles" style="max-width:80vw;max-height:70vh"/>
+          </div>
+        </section>
+
+        <section class="bg-black aligncenter">
+          <span class="background dark" style="background-image:url('imgs/receiver-02.jpg')"></span>
+          <div class="wrap">
+            <h1>试试简单的转发器</h1>
+            <br/>
+            <h2>上行：<big><strong>438.700</strong></big> MHz</h2>
+            <h2>下行：<big><strong>145.100</strong></big> MHz</h2>
+            <br/>
+            <pre style="font-size:125%">rtl_sdr -s 250000 -g 35 -f 438.7M -p 59 - | buffer | \
+sudo ./sendiq -s 250000 -f 145.1e6 -t u8 -i -</pre>
+          </div>
+        </section>
+
+        <section class="bg-black aligncenter">
+          <span class="background dark" style="background-image:url('imgs/receiver-02.jpg')"></span>
+          <div class="wrap">
+            <h1>APRS Rx iGate</h1>
+            <h2>树莓派 + 电视棒 = APRS iGate网关</h2>
+            <h3>接收电台的APRS信号、解码后转发到aprs.fi</h3>
+            <h3><a href="http://qso365.co.uk/2018/04/updated-guide-to-setting-up-an-aprs-rx-only-igate-using-a-raspberry-pi-rtl-sdr-dongle-and-a-pre-built-image/">G6NHU于2018年4月13日发了一篇文档</a></h3>
+          </div>
+        </section>
+
+        <section class="bg-black aligncenter">
+          <span class="background dark" style="background-image:url('imgs/receiver-02.jpg')"></span>
+          <div class="wrap">
+            <div class="slide-top">
+              <h1>APRS - Beijing</h1>
+            </div>
+            <img class="slide-bottom card" src="imgs/aprs-beijing.png" alt="aprs beijing" style="max-width:80vw;max-height:70vh"/>
+          </div>
+        </section>
+
+        <section class="bg-black aligncenter">
+          <span class="background dark" style="background-image:url('imgs/receiver-02.jpg')"></span>
+          <div class="wrap">
+            <div class="slide-top">
+              <h1>收SSTV图片</h1>
+            </div>
+            <img class="slide-bottom card" src="imgs/pi_qsstv_rx_2.jpg" alt="pi qsstv" style="max-width:80vw;max-height:70vh"/>
+          </div>
+        </section>
+
+        <section class="bg-black aligncenter">
+          <span class="background dark" style="background-image:url('imgs/receiver-02.jpg')"></span>
+          <div class="wrap">
+            <h1>接收NOAA气象卫星的云图</h1>
+            <div class="alignleft" style="text-align:left">
+              <h3>预测卫星轨迹</h3>
+              <h3>接收卫星信号</h3>
+              <h3>解码出云图</h3>
+              <h3>上传到Twitter</h3>
+              <h3>这一切都是自动化的</h3>
+              <h3><a href="https://www.instructables.com/id/Raspberry-Pi-NOAA-Weather-Satellite-Receiver/">Haslettj发布了一个教程</a></h3>
+            </div>
+            <img class="alignright card" src="imgs/rpi-noaa-received.jpg" alt="rpi noaa received" style="max-width:40vw"/>
+          </div>
+        </section>
+
+        <section class="bg-black aligncenter">
+          <span class="background dark" style="background-image:url('imgs/receiver-02.jpg')"></span>
+          <div class="wrap">
+            <div class="slide-top">
+              <h1>接收NOAA气象卫星的云图</h1>
+            </div>
+            <img class="slide-bottom card" src="imgs/rpi-noaa-27-made.png" alt="rpi noaa 27 made" style="max-width:80vw;max-height:70vh"/>
+          </div>
+        </section>
+
+        <section class="bg-black aligncenter">
+          <span class="background dark" style="background-image:url('imgs/receiver-02.jpg')"></span>
+          <div class="wrap">
+            <div class="slide-top">
+              <h1>录制和重放信号</h1>
+              <h4>RPiTx的例子：录制一段无线遥控开关的信号，并再次发射出去。</h4>
+            </div>
+            <img class="slide-bottom card" src="imgs/rpitx-replay.png" alt="rpitx replay" style="max-width:80vw;max-height:60vh"/>
+          </div>
+        </section>
+
+        <section class="bg-black aligncenter">
+          <span class="background dark" style="background-image:url('imgs/receiver-02.jpg')"></span>
+          <div class="wrap">
+            <h1>显示频谱</h1>
+            <div class="alignleft" style="text-align:left">
+              <h3>接X5105的IF输出</h3>
+              <h3>大屏显示频谱！</h3>
+              <h3>接CIV控制电台</h3>
+              <h3>……</h3>
+            </div>
+            <img class="alignright card" src="imgs/rpi-spectrum.jpg" alt="rpi spectrum" style="max-width:50vw"/>
+          </div>
+        </section>
+
+        <section class="bg-black aligncenter">
+          <span class="background dark" style="background-image:url('imgs/receiver-02.jpg')"></span>
+          <div class="wrap">
+            <h1>电视棒玩够了，能不能玩点值钱的家伙？</h1>
+          </div>
+        </section>
+
+        <section class="bg-blue aligncenter">
+          <span class="background dark" style="background-image:url('imgs/x5105.jpg')"></span>
+          <div class="wrap">
+            <h1>带着树莓派去架台</h1>
+            <h2>不再需要背电脑</h2>
+          </div>
+        </section>
+
+        <section class="bg-black aligncenter">
+          <span class="background dark" style="background-image:url('imgs/x5105.jpg')"></span>
+          <div class="wrap">
+            <h2>我的野外架台方案</h2>
+            <p class="text-intro">便携持久能数传</p>
+            <div class="grid" style="font-size:150%;text-align:left">
+              <div class="column">
+                <p>协谷X5105：内置电池、天调强大</p>
+                <p>DP、GP线天线：便携</p>
+                <p>USB CIV线：控制电台</p>
+                <p>CE19：AF in/out</p>
+                <p>USB声卡：AF in/out</p>
+              </div>
+              <div class="column">
+                <p>树莓派：WSJT-X、FlDigi</p>
+                <p>移动电源：给树莓派供电</p>
+                <p>手机：网络热点、访问终端</p>
+                <p>蓝牙鼠键（可选）：操控体验</p>
+                <p>磷酸铁锂电池（可选）：更持久</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-black aligncenter">
+          <span class="background dark" style="background-image:url('imgs/x5105.jpg')"></span>
+          <div class="wrap">
+            <div class="slide-top">
+              <h1>树莓派、USB声卡和CIV控制线</h1>
+            </div>
+            <img class="slide-bottom card" src="imgs/rpi-connects.jpg" alt="rpi connects" style="max-width:80vw;max-height:70vh"/>
+          </div>
+        </section>
+
+        <section class="bg-black aligncenter">
+          <span class="background dark" style="background-image:url('imgs/x5105.jpg')"></span>
+          <div class="wrap">
+            <h3>X5105、CE19和CIV线</h3>
+            <ul class="flexblock gallery dark-caption">
+              <li>
+                <a href="#">
+                  <figure>
+                    <img alt="Thumbnail" src="imgs/x5105-front.jpg"/>
+                    <figcaption>
+                      <h2>X5105</h2>
+                      <p>HF+6m、5W、内置天调、内置电池</p>
+                    </figcaption>
+                  </figure>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <figure>
+                    <img alt="Thumbnail" src="imgs/ce19-top.jpg"/>
+                    <figcaption>
+                      <h2>CE19</h2>
+                      <p>连接AF in/out</p>
+                    </figcaption>
+                  </figure>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <figure>
+                    <img alt="Thumbnail" src="imgs/ttl-232.jpg"/>
+                    <figcaption>
+                      <h2>USB转TTL控制线</h2>
+                      <p>连接CIV</p>
+                    </figcaption>
+                  </figure>
+                </a>
+              </li>
+            </ul>
+        </section>
+
+        <section class="bg-black aligncenter">
+          <span class="background dark" style="background-image:url('imgs/x5105.jpg')"></span>
+          <div class="wrap">
+            <div class="slide-top">
+              <h3>树莓派上运行FT8</h3>
+            </div>
+            <img class="slide-bottom card" src="imgs/rpi-ft8-desktop.png" alt="rpi ft8 on desktop" style="max-width:80vw;max-height:70vh"/>
+          </div>
+        </section>
+
+        <section class="bg-black aligncenter">
+          <span class="background dark" style="background-image:url('imgs/x5105.jpg')"></span>
+          <div class="wrap">
+            <div class="slide-top">
+              <h3>树莓派上运行FlDigi</h3>
+            </div>
+            <img class="slide-bottom card" src="imgs/rpi-fldigi-desktop.png" alt="rpi fldigi on desktop" style="max-width:80vw;max-height:70vh"/>
+          </div>
+        </section>
+
+        <section class="bg-black aligncenter">
+          <span class="background dark" style="background-image:url('imgs/x5105.jpg')"></span>
+          <div class="wrap">
+            <h2>用手机当树莓派终端</h2>
+            <div class="grid" style="font-size:150%;text-align:left">
+              <div class="column">
+                <p>开启手机WiFi热点</p>
+                <p>树莓派连接手机WiFi热点</p>
+                <p>打开手机上的VNC客户端，连接树莓派</p>
+                <p>通过手机屏幕操作树莓派</p>
+                <p>或用蓝牙键盘鼠标</p>
+              </div>
+              <div class="column">
+                <img class="card" src="imgs/rpi-phone-keyboard.jpg" alt="rpi phone keyboard"/>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-black aligncenter">
+          <span class="background dark" style="background-image:url('imgs/x5105.jpg')"></span>
+          <div class="wrap">
+            <div class="slide-top">
+              <h3>从手机访问树莓派（FT8）</h3>
+            </div>
+            <img class="slide-bottom card" src="imgs/rpi-ft8-mobile.png" alt="rpi ft8 on mobile" style="max-width:80vw;max-height:70vh"/>
+          </div>
+        </section>
+
+        <section class="bg-black aligncenter">
+          <span class="background dark" style="background-image:url('imgs/x5105.jpg')"></span>
+          <div class="wrap">
+            <div class="slide-top">
+              <h3>从手机访问树莓派（FlDigi）</h3>
+            </div>
+            <img class="slide-bottom card" src="imgs/rpi-fldigi-mobile.png" alt="rpi fldigi on mobile" style="max-width:80vw;max-height:70vh"/>
+          </div>
+        </section>
+
+        <section class="bg-black aligncenter">
+          <span class="background dark" style="background-image:url('imgs/x5105.jpg')"></span>
+          <div class="wrap">
+            <div class="slide-top">
+              <h3>X5105 RigCtld - X5105的网络控制服务</h3>
+              <p class="text-intro">让Linux和macOS的电台软件能连接X5105</p>
+            </div>
+            <img class="slide-bottom card" src="imgs/x5105-rigctld.png" alt="x5105 rigctld" style="max-width:80vw;max-height:70vh"/>
+          </div>
+        </section>
+
+        <section class="bg-black aligncenter">
+          <span class="background dark" style="background-image:url('imgs/x5105.jpg')"></span>
+          <div class="wrap">
+            <h2>电台软件配置</h2>
+            <p class="text-intro">详细说明在<a href="https://github.com/qiwenmin/x5105-rigctld">项目官网</a></p>
+            <div class="grid" style="font-size:150%;text-align:left">
+              <div class="column">
+                <img class="card" src="imgs/wsjtx-prefs.png" alt="wsjtx"/>
+              </div>
+              <div class="column">
+                <img class="card" src="imgs/fldigi-prefs.png" alt="fldigi"/>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-black aligncenter">
+          <span class="background dark" style="background-image:url('imgs/x5105.jpg')"></span>
+          <div class="wrap">
+            <h2>一些体会</h2>
+            <p class="text-intro">期待更好的体验</p>
+            <div class="grid" style="font-size:150%;text-align:left">
+              <div class="column">
+                <p>USB声卡用CM108就行</p>
+                <p>X5105的PTT用CIV命令</p>
+                <p>可用USB HUB来连接声卡和CIV控制线</p>
+                <p>蓝牙键盘鼠标比手机触屏的体验强</p>
+              </div>
+              <div class="column">
+                <p>X5105没有VOX，有的软件没法用</p>
+                <p>希望能通过音频控制CW Keying</p>
+                <p>连线还是比较多，能简化就更好了</p>
+                <p>做一个All in One的树莓派模块</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-blue aligncenter">
+          <span class="background dark" style="background-image:url('imgs/rpi-module.jpg')"></span>
+          <div class="wrap">
+            <h2>BG3MDO的Ham Pi项目</h2>
+            <p class="text-intro">用于Echolink、APRS、中继逻辑控制或远程电台 —— 项目介绍在<a href="http://bg3mdo.ts-ham.com/2017/08/05/ham-pi-%E9%A1%B9%E7%9B%AE%E4%BB%8B%E7%BB%8D/">这里</a></p>
+            <img class="alignright size-20" src="imgs/bg3mdo-ham-pi.jpg" alt="ham pi" style="max-height:60vh"/>
+            <h4 style="text-align:left">最近业余时间做了个树莓派的扩展板，一个树莓派的通用电台接口板（用于Echolink, APRS, 或者中继逻辑控制, 或远程电台）。</h4>
+            <h4 style="text-align:left">板子跟树莓派一样大，只是向后平移了一点让出了USB和网口，板子已经开槽方便连接树莓派官方显示屏和相机。</h4>
+          </div>
+        </section>
+
+        <section class="bg-black aligncenter">
+          <span class="background dark" style="background-image:url('imgs/rpi-module.jpg')"></span>
+          <div class="wrap">
+            <h2>BG3MDO的Ham Pi项目</h2>
+            <div class="grid" style="font-size:150%;text-align:left">
+              <div class="column">
+                <p>树莓派的通用电台接口板</p>
+                <p>实时时钟RTC</p>
+                <p>96K 24bit声卡</p>
+                <p>2路12bit ADC</p>
+              </div>
+              <div class="column">
+                <p>温度传感器</p>
+                <p>1路固态 55V 1A 继电器</p>
+                <p>标准串口，带有RTS和CTS</p>
+                <p>高速光耦隔离的PTT和SQL控制</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-black aligncenter">
+          <span class="background dark" style="background-image:url('imgs/rpi-module.jpg')"></span>
+          <div class="wrap">
+            <h3>BG3MDO的Ham Pi项目</h3>
+            <ul class="flexblock gallery dark-caption">
+              <li>
+                <a href="#">
+                  <figure>
+                    <img alt="Thumbnail" src="imgs/bg3mdo-ham-pi-1.png"/>
+                  </figure>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <figure>
+                    <img alt="Thumbnail" src="imgs/bg3mdo-ham-pi-2.png"/>
+                  </figure>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <figure>
+                    <img alt="Thumbnail" src="imgs/bg3mdo-ham-pi-3.png"/>
+                  </figure>
+                </a>
+              </li>
+            </ul>
+        </section>
+
+        <section class="bg-black aligncenter">
+          <span class="background dark" style="background-image:url('imgs/rpi-module.jpg')"></span>
+          <div class="wrap">
+            <h2>BG3MDO的MMDVM项目</h2>
+            <p class="text-intro">多模式数字语音调制解调器 —— 项目介绍在<a href="http://bg3mdo.ts-ham.com/2017/08/05/mmdvm-%E9%A1%B9%E7%9B%AE%E4%BB%8B%E7%BB%8D-2/">这里</a></p>
+            <div class="grid ms">
+              <div class="column paras" style="text-align:left">
+                <p>MMDVM全称多模式数字语音调制解调器，它是一个涉及硬件和软件的业余无线电数字通信项目。</p>
+                <p>MMDVM支持目前所有的常规数字模式，例如ICOM的DSTAR, 摩托罗拉海能达的DMR，八重洲的Fusion C4FM 以及 P.25制式数字对讲。</p>
+                <p>MMDVM主板可以用以将模拟电台，中继转换为全数字模式电台或者中继台，也可以实现数字中继模式转换，例如使得八重洲C4FM中继支持摩托的DMR。</p>
+                <p>MMDVM hotspot 热点主板自带射频，他可以实现数字语音网关功能，只需要额外一个对讲机或者车台就能组成互联网互联的数字对讲系统，通联全世界。</p>
+                <p>中继和热点可以相互连接，类似Echolink，由于是数字模式，其语音质量和可传递的信息远比模拟电台丰富的多。</p>
+              </div>
+              <div class="column">
+                <img src="imgs/bg3mdo-mmdvm.png" alt="mmdvm"/>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-black aligncenter">
+          <span class="background dark" style="background-image:url('imgs/rpi-module.jpg')"></span>
+          <div class="wrap">
+            <div class="slide-top">
+              <h2>数字热点</h2>
+            </div>
+            <img class="slide-bottom card" src="imgs/digital-hotspots.jpg" alt="digital hotspots" style="max-width:80vw;max-height:70vh"/>
+          </div>
+        </section>
+
+        <section class="bg-black aligncenter">
+          <span class="background dark" style="background-image:url('imgs/rpi-module.jpg')"></span>
+          <div class="wrap">
+            <div class="slide-top">
+              <h2>MMDVM热点</h2>
+            </div>
+            <img class="slide-bottom card" src="imgs/mmdvm-module-1.jpg" alt="mmdvm hotspots" style="max-width:80vw;max-height:70vh"/>
+          </div>
+        </section>
+
+        <section class="bg-black aligncenter">
+          <span class="background dark" style="background-image:url('imgs/rpi-module.jpg')"></span>
+          <div class="wrap">
+            <h3>MMDVM热点</h3>
+            <ul class="flexblock gallery dark-caption">
+              <li>
+                <a href="#">
+                  <figure>
+                    <img alt="Thumbnail" src="imgs/mmdvm-module-2.jpg"/>
+                  </figure>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <figure>
+                    <img alt="Thumbnail" src="imgs/mmdvm-module-3.jpg"/>
+                  </figure>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <figure>
+                    <img alt="Thumbnail" src="imgs/mmdvm-module-4.jpg"/>
+                  </figure>
+                </a>
+              </li>
+            </ul>
+        </section>
+
+        <section class="bg-blue aligncenter">
+          <span class="background dark" style="background-image:url('imgs/end-bg.jpg')"></span>
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap">
+            <h1>TNX de BG1REN</h1>
+            <img src="imgs/2018-nantong-qrcode.png" alt="qrcode" style="max-height:50vh"/>
+          </div>
+        </section>
+
+      </article>
+    </main>
+    <!--main-->
+
+    <!-- Required -->
+    <script src="../static/js/webslides.js"></script>
+
+    <script>
+      window.ws = new WebSlides();
+    </script>
+
+    <!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
+    <script defer src="../static/js/svg-icons.js"></script>
+
+  </body>
+</html>

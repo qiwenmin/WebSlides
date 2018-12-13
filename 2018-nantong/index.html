@@ -65,6 +65,18 @@
       .card {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
       }
+      .gallery.dark-caption li figcaption {
+        background-color: #ddd;
+      }
+      .gallery.dark-caption li figcaption:before {
+        border-color: transparent transparent #ddd #ddd;
+      }
+
+      div.paras p {
+        font-size: 110%;
+        line-height: 2.5rem;
+        margin-bottom: 1.5rem;
+      }
     </style>
   </head>
   <body>
@@ -723,7 +735,7 @@ sudo wspr --repeat --offset BG1REN ON80 10 40m 20m 15m 10m</pre>
             <h2>上行：<big><strong>438.700</strong></big> MHz</h2>
             <h2>下行：<big><strong>145.100</strong></big> MHz</h2>
             <br/>
-            <pre style="font-size:125%">rtl_sdr -s 250000 -g 35 -f 437.5M -p 59 - | buffer | \
+            <pre style="font-size:125%">rtl_sdr -s 250000 -g 35 -f 438.7M -p 59 - | buffer | \
 sudo ./sendiq -s 250000 -f 145.1e6 -t u8 -i -</pre>
           </div>
         </section>
@@ -806,6 +818,343 @@ sudo ./sendiq -s 250000 -f 145.1e6 -t u8 -i -</pre>
               <h3>……</h3>
             </div>
             <img class="alignright card" src="imgs/rpi-spectrum.jpg" alt="rpi spectrum" style="max-width:50vw"/>
+          </div>
+        </section>
+
+        <section class="bg-black aligncenter">
+          <span class="background dark" style="background-image:url('imgs/receiver-02.jpg')"></span>
+          <div class="wrap">
+            <h1>电视棒玩够了，能不能玩点值钱的家伙？</h1>
+          </div>
+        </section>
+
+        <section class="bg-blue aligncenter">
+          <span class="background dark" style="background-image:url('imgs/x5105.jpg')"></span>
+          <div class="wrap">
+            <h1>带着树莓派去架台</h1>
+            <h2>不再需要背电脑</h2>
+          </div>
+        </section>
+
+        <section class="bg-black aligncenter">
+          <span class="background dark" style="background-image:url('imgs/x5105.jpg')"></span>
+          <div class="wrap">
+            <h2>我的野外架台方案</h2>
+            <p class="text-intro">便携持久能数传</p>
+            <div class="grid" style="font-size:150%;text-align:left">
+              <div class="column">
+                <p>协谷X5105：内置电池、天调强大</p>
+                <p>DP、GP线天线：便携</p>
+                <p>USB CIV线：控制电台</p>
+                <p>CE19：AF in/out</p>
+                <p>USB声卡：AF in/out</p>
+              </div>
+              <div class="column">
+                <p>树莓派：WSJT-X、FlDigi</p>
+                <p>移动电源：给树莓派供电</p>
+                <p>手机：网络热点、访问终端</p>
+                <p>蓝牙鼠键（可选）：操控体验</p>
+                <p>磷酸铁锂电池（可选）：更持久</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-black aligncenter">
+          <span class="background dark" style="background-image:url('imgs/x5105.jpg')"></span>
+          <div class="wrap">
+            <div class="slide-top">
+              <h1>树莓派、USB声卡和CIV控制线</h1>
+            </div>
+            <img class="slide-bottom card" src="imgs/rpi-connects.jpg" alt="rpi connects" style="max-width:80vw;max-height:70vh"/>
+          </div>
+        </section>
+
+        <section class="bg-black aligncenter">
+          <span class="background dark" style="background-image:url('imgs/x5105.jpg')"></span>
+          <div class="wrap">
+            <h3>X5105、CE19和CIV线</h3>
+            <ul class="flexblock gallery dark-caption">
+              <li>
+                <a href="#">
+                  <figure>
+                    <img alt="Thumbnail" src="imgs/x5105-front.jpg"/>
+                    <figcaption>
+                      <h2>X5105</h2>
+                      <p>HF+6m、5W、内置天调、内置电池</p>
+                    </figcaption>
+                  </figure>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <figure>
+                    <img alt="Thumbnail" src="imgs/ce19-top.jpg"/>
+                    <figcaption>
+                      <h2>CE19</h2>
+                      <p>连接AF in/out</p>
+                    </figcaption>
+                  </figure>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <figure>
+                    <img alt="Thumbnail" src="imgs/ttl-232.jpg"/>
+                    <figcaption>
+                      <h2>USB转TTL控制线</h2>
+                      <p>连接CIV</p>
+                    </figcaption>
+                  </figure>
+                </a>
+              </li>
+            </ul>
+        </section>
+
+        <section class="bg-black aligncenter">
+          <span class="background dark" style="background-image:url('imgs/x5105.jpg')"></span>
+          <div class="wrap">
+            <div class="slide-top">
+              <h3>树莓派上运行FT8</h3>
+            </div>
+            <img class="slide-bottom card" src="imgs/rpi-ft8-desktop.png" alt="rpi ft8 on desktop" style="max-width:80vw;max-height:70vh"/>
+          </div>
+        </section>
+
+        <section class="bg-black aligncenter">
+          <span class="background dark" style="background-image:url('imgs/x5105.jpg')"></span>
+          <div class="wrap">
+            <div class="slide-top">
+              <h3>树莓派上运行FlDigi</h3>
+            </div>
+            <img class="slide-bottom card" src="imgs/rpi-fldigi-desktop.png" alt="rpi fldigi on desktop" style="max-width:80vw;max-height:70vh"/>
+          </div>
+        </section>
+
+        <section class="bg-black aligncenter">
+          <span class="background dark" style="background-image:url('imgs/x5105.jpg')"></span>
+          <div class="wrap">
+            <h2>用手机当树莓派终端</h2>
+            <div class="grid" style="font-size:150%;text-align:left">
+              <div class="column">
+                <p>开启手机WiFi热点</p>
+                <p>树莓派连接手机WiFi热点</p>
+                <p>打开手机上的VNC客户端，连接树莓派</p>
+                <p>通过手机屏幕操作树莓派</p>
+                <p>或用蓝牙键盘鼠标</p>
+              </div>
+              <div class="column">
+                <img class="card" src="imgs/rpi-phone-keyboard.jpg" alt="rpi phone keyboard"/>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-black aligncenter">
+          <span class="background dark" style="background-image:url('imgs/x5105.jpg')"></span>
+          <div class="wrap">
+            <div class="slide-top">
+              <h3>从手机访问树莓派（FT8）</h3>
+            </div>
+            <img class="slide-bottom card" src="imgs/rpi-ft8-mobile.png" alt="rpi ft8 on mobile" style="max-width:80vw;max-height:70vh"/>
+          </div>
+        </section>
+
+        <section class="bg-black aligncenter">
+          <span class="background dark" style="background-image:url('imgs/x5105.jpg')"></span>
+          <div class="wrap">
+            <div class="slide-top">
+              <h3>从手机访问树莓派（FlDigi）</h3>
+            </div>
+            <img class="slide-bottom card" src="imgs/rpi-fldigi-mobile.png" alt="rpi fldigi on mobile" style="max-width:80vw;max-height:70vh"/>
+          </div>
+        </section>
+
+        <section class="bg-black aligncenter">
+          <span class="background dark" style="background-image:url('imgs/x5105.jpg')"></span>
+          <div class="wrap">
+            <div class="slide-top">
+              <h3>X5105 RigCtld - X5105的网络控制服务</h3>
+              <p class="text-intro">让Linux和macOS的电台软件能连接X5105</p>
+            </div>
+            <img class="slide-bottom card" src="imgs/x5105-rigctld.png" alt="x5105 rigctld" style="max-width:80vw;max-height:70vh"/>
+          </div>
+        </section>
+
+        <section class="bg-black aligncenter">
+          <span class="background dark" style="background-image:url('imgs/x5105.jpg')"></span>
+          <div class="wrap">
+            <h2>电台软件配置</h2>
+            <p class="text-intro">详细说明在<a href="https://github.com/qiwenmin/x5105-rigctld">项目官网</a></p>
+            <div class="grid" style="font-size:150%;text-align:left">
+              <div class="column">
+                <img class="card" src="imgs/wsjtx-prefs.png" alt="wsjtx"/>
+              </div>
+              <div class="column">
+                <img class="card" src="imgs/fldigi-prefs.png" alt="fldigi"/>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-black aligncenter">
+          <span class="background dark" style="background-image:url('imgs/x5105.jpg')"></span>
+          <div class="wrap">
+            <h2>一些体会</h2>
+            <p class="text-intro">期待更好的体验</p>
+            <div class="grid" style="font-size:150%;text-align:left">
+              <div class="column">
+                <p>USB声卡用CM108就行</p>
+                <p>X5105的PTT用CIV命令</p>
+                <p>可用USB HUB来连接声卡和CIV控制线</p>
+                <p>蓝牙键盘鼠标比手机触屏的体验强</p>
+              </div>
+              <div class="column">
+                <p>X5105没有VOX，有的软件没法用</p>
+                <p>希望能通过音频控制CW Keying</p>
+                <p>连线还是比较多，能简化就更好了</p>
+                <p>做一个All in One的树莓派模块</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-blue aligncenter">
+          <span class="background dark" style="background-image:url('imgs/rpi-module.jpg')"></span>
+          <div class="wrap">
+            <h2>BG3MDO的Ham Pi项目</h2>
+            <p class="text-intro">用于Echolink、APRS、中继逻辑控制或远程电台 —— 项目介绍在<a href="http://bg3mdo.ts-ham.com/2017/08/05/ham-pi-%E9%A1%B9%E7%9B%AE%E4%BB%8B%E7%BB%8D/">这里</a></p>
+            <img class="alignright size-20" src="imgs/bg3mdo-ham-pi.jpg" alt="ham pi" style="max-height:60vh"/>
+            <h4 style="text-align:left">最近业余时间做了个树莓派的扩展板，一个树莓派的通用电台接口板（用于Echolink, APRS, 或者中继逻辑控制, 或远程电台）。</h4>
+            <h4 style="text-align:left">板子跟树莓派一样大，只是向后平移了一点让出了USB和网口，板子已经开槽方便连接树莓派官方显示屏和相机。</h4>
+          </div>
+        </section>
+
+        <section class="bg-black aligncenter">
+          <span class="background dark" style="background-image:url('imgs/rpi-module.jpg')"></span>
+          <div class="wrap">
+            <h2>BG3MDO的Ham Pi项目</h2>
+            <div class="grid" style="font-size:150%;text-align:left">
+              <div class="column">
+                <p>树莓派的通用电台接口板</p>
+                <p>实时时钟RTC</p>
+                <p>96K 24bit声卡</p>
+                <p>2路12bit ADC</p>
+              </div>
+              <div class="column">
+                <p>温度传感器</p>
+                <p>1路固态 55V 1A 继电器</p>
+                <p>标准串口，带有RTS和CTS</p>
+                <p>高速光耦隔离的PTT和SQL控制</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-black aligncenter">
+          <span class="background dark" style="background-image:url('imgs/rpi-module.jpg')"></span>
+          <div class="wrap">
+            <h3>BG3MDO的Ham Pi项目</h3>
+            <ul class="flexblock gallery dark-caption">
+              <li>
+                <a href="#">
+                  <figure>
+                    <img alt="Thumbnail" src="imgs/bg3mdo-ham-pi-1.png"/>
+                  </figure>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <figure>
+                    <img alt="Thumbnail" src="imgs/bg3mdo-ham-pi-2.png"/>
+                  </figure>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <figure>
+                    <img alt="Thumbnail" src="imgs/bg3mdo-ham-pi-3.png"/>
+                  </figure>
+                </a>
+              </li>
+            </ul>
+        </section>
+
+        <section class="bg-black aligncenter">
+          <span class="background dark" style="background-image:url('imgs/rpi-module.jpg')"></span>
+          <div class="wrap">
+            <h2>BG3MDO的MMDVM项目</h2>
+            <p class="text-intro">多模式数字语音调制解调器 —— 项目介绍在<a href="http://bg3mdo.ts-ham.com/2017/08/05/mmdvm-%E9%A1%B9%E7%9B%AE%E4%BB%8B%E7%BB%8D-2/">这里</a></p>
+            <div class="grid ms">
+              <div class="column paras" style="text-align:left">
+                <p>MMDVM全称多模式数字语音调制解调器，它是一个涉及硬件和软件的业余无线电数字通信项目。</p>
+                <p>MMDVM支持目前所有的常规数字模式，例如ICOM的DSTAR, 摩托罗拉海能达的DMR，八重洲的Fusion C4FM 以及 P.25制式数字对讲。</p>
+                <p>MMDVM主板可以用以将模拟电台，中继转换为全数字模式电台或者中继台，也可以实现数字中继模式转换，例如使得八重洲C4FM中继支持摩托的DMR。</p>
+                <p>MMDVM hotspot 热点主板自带射频，他可以实现数字语音网关功能，只需要额外一个对讲机或者车台就能组成互联网互联的数字对讲系统，通联全世界。</p>
+                <p>中继和热点可以相互连接，类似Echolink，由于是数字模式，其语音质量和可传递的信息远比模拟电台丰富的多。</p>
+              </div>
+              <div class="column">
+                <img src="imgs/bg3mdo-mmdvm.png" alt="mmdvm"/>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-black aligncenter">
+          <span class="background dark" style="background-image:url('imgs/rpi-module.jpg')"></span>
+          <div class="wrap">
+            <div class="slide-top">
+              <h2>数字热点</h2>
+            </div>
+            <img class="slide-bottom card" src="imgs/digital-hotspots.jpg" alt="digital hotspots" style="max-width:80vw;max-height:70vh"/>
+          </div>
+        </section>
+
+        <section class="bg-black aligncenter">
+          <span class="background dark" style="background-image:url('imgs/rpi-module.jpg')"></span>
+          <div class="wrap">
+            <div class="slide-top">
+              <h2>MMDVM热点</h2>
+            </div>
+            <img class="slide-bottom card" src="imgs/mmdvm-module-1.jpg" alt="mmdvm hotspots" style="max-width:80vw;max-height:70vh"/>
+          </div>
+        </section>
+
+        <section class="bg-black aligncenter">
+          <span class="background dark" style="background-image:url('imgs/rpi-module.jpg')"></span>
+          <div class="wrap">
+            <h3>MMDVM热点</h3>
+            <ul class="flexblock gallery dark-caption">
+              <li>
+                <a href="#">
+                  <figure>
+                    <img alt="Thumbnail" src="imgs/mmdvm-module-2.jpg"/>
+                  </figure>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <figure>
+                    <img alt="Thumbnail" src="imgs/mmdvm-module-3.jpg"/>
+                  </figure>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <figure>
+                    <img alt="Thumbnail" src="imgs/mmdvm-module-4.jpg"/>
+                  </figure>
+                </a>
+              </li>
+            </ul>
+        </section>
+
+        <section class="bg-blue aligncenter">
+          <span class="background dark" style="background-image:url('imgs/end-bg.jpg')"></span>
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap">
+            <h1>TNX de BG1REN</h1>
+            <img src="imgs/2018-nantong-qrcode.png" alt="qrcode" style="max-height:50vh"/>
           </div>
         </section>
 
